@@ -9,3 +9,5 @@ Se todos os dias decorar-mos 3 palavras, então num ano ultrapassaríamos a marc
 365\*3=1095
 
 Estas sugestões de palavras servem para o utilizador da aplicação pesquisar mais sobre elas
+
+Alguem com originalidade consegue utilizar o output desta aplicação para (por exemplo), no startup do sistema operativo, mostrar uma notificação ou algo do género com as palavras
