@@ -8,20 +8,14 @@ res = requests.get(
 
 soup = BeautifulSoup(res.content, 'html.parser')
 
-count = 0
 total = []
 row = []
-for td in soup.find_all('td'):
-    count += 1
+for idx, td in enumerate(soup.find_all('td')):
     txt = td.get_text()
     row.append(txt)
-    #print(txt, end=" ")
-    if(count == 3):
-        count = 0
+    if(idx % 3 == 0):
         total.append(row)
         row = []
-        # print("\n")
 
-print(random.choice(total))
-print(random.choice(total))
-print(random.choice(total))
+res = [random.choice(total), random.choice(total), random.choice(total)]
+print(res)
